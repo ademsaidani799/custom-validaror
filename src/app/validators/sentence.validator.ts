@@ -1,6 +1,6 @@
 import { AbstractControl } from "@angular/forms";
 
-function ValidateSentence(control:AbstractControl){
+export function ValidateSentence(control:AbstractControl){
     const abusiveWords =['fool', 'idiot', 'damn', 'bloody'];
     const sentence = control.value;
     const wordsArr = sentence.split();
